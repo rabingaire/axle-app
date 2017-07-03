@@ -7,6 +7,8 @@ export default common = {
     whiteColor:'#FFFFFF',
     tuchableUnderlayWhiteColor : 'rgba(255, 255, 255, 0.7)',
     blackColor:'#000000',
+    grayColor:'#D1D3D4',
+    tuchableUnderlayGrayColor : 'rgba(209,211,212,0.7)',
     marginHorizontal:20,
 
 };

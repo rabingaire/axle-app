@@ -26,6 +26,7 @@ export default class SignUp extends Component {
                 style={{}}
                 source={images.axle}
               />
+              <Text style={{}}></Text>
             </View>
 
 

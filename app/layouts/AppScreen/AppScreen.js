@@ -19,7 +19,7 @@ import SignUp from './../../routes/register/signUp.js';
 // going to disable the header for now
   const stackNavigatorConfiguration = {
     headerMode: 'none',
-    initialRouteName: 'PathSelection'
+    initialRouteName: 'ChangePassword'
   }
 
   export const AppScreen = StackNavigator(routeConfiguration,stackNavigatorConfiguration)
