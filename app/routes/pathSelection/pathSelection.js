@@ -31,11 +31,11 @@ export default class PathSelection extends Component {
               />
             </View>
 
-              <TouchableHighlight onPress={() => navigate('Login')} underlayColor={common.tuchableUnderlayColor} style={[styles.btnLogin,commonStyle.contentCenter,{backgroundColor:common.greenColor,bottom:107}]}>
+              <TouchableHighlight onPress={() => navigate('Login')} underlayColor={common.tuchableUnderlayGreenColor} style={[styles.btnLogin,commonStyle.contentCenter,{backgroundColor:common.greenColor,bottom:107}]}>
                 <Text style={commonStyle.fontSize_14}>LOGIN</Text>
               </TouchableHighlight>
 
-              <TouchableHighlight style={[styles.btnLogin,commonStyle.contentCenter,{backgroundColor:common.whiteColor,bottom:37,borderColor:common.blackColor,borderWidth:1}]}>
+              <TouchableHighlight onPress={() => navigate('SignUp')} underlayColor={common.tuchableUnderlayWhiteColor} style={[styles.btnLogin,commonStyle.contentCenter,{backgroundColor:common.whiteColor,bottom:37,borderColor:common.blackColor,borderWidth:1}]}>
                 <Text style={[commonStyle.fontSize_14,{color:common.blackColor}]}>SIGN UP</Text>
               </TouchableHighlight>
             </View>
