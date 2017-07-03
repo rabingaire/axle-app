@@ -2,6 +2,8 @@ import React , { Component }from 'react';
 import { Text, View, TouchableHighlight, Image, TextInput } from 'react-native';
 import styles from './styles';
 import images from './../../config/images.js';
+import commonStyle from './../../config/commonStyle.js';
+import common from './../../config/common.js';
 
 let self;
 
@@ -18,9 +20,25 @@ export default class PathSelection extends Component {
   }
 
   render(){
+    const { navigate } = this.props.navigation;
     return (
-      <View style={styles.container}>
-        
+      <View style={commonStyle.container}>
+        <View style={[commonStyle.subContainer,commonStyle.contentCenter]}>
+            <View style={commonStyle.contentCenter}>
+                <Image
+                style={{}}
+                source={images.app_logo}
+              />
+            </View>
+
+              <TouchableHighlight onPress={() => navigate('Login')} underlayColor={common.tuchableUnderlayColor} style={[styles.btnLogin,commonStyle.contentCenter,{backgroundColor:common.greenColor,bottom:107}]}>
+                <Text style={commonStyle.fontSize_14}>LOGIN</Text>
+              </TouchableHighlight>
+
+              <TouchableHighlight style={[styles.btnLogin,commonStyle.contentCenter,{backgroundColor:common.whiteColor,bottom:37,borderColor:common.blackColor,borderWidth:1}]}>
+                <Text style={[commonStyle.fontSize_14,{color:common.blackColor}]}>SIGN UP</Text>
+              </TouchableHighlight>
+            </View>
       </View>
     )
   }

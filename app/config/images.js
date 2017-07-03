@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 
 const images = {
-  //crack : require('../images/Crack.png'),
+  app_logo : require('../images/app_logo.png'),
 };
 
 export default images;
