@@ -15,9 +15,11 @@ export default class PickUpLocation extends Component {
   render(){
     return (
       <View>
-        <LocationBlock>
-          <Text>Hello</Text>
-        </LocationBlock>
+        <LocationBlock
+          title="Pickup Location"
+          place="Warehouse"
+          street="1234 John Street"
+          location="Los Angeles, California 90001" />
       </View>
     )
   }
