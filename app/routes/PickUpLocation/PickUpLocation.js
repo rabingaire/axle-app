@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 import LocationBlock from './../../layouts/common/LocationBlock/LocationBlock';
 
-class PickUpLocation extends Component {
+export default class PickUpLocation extends Component {
   constructor(props){
     super(props);
+
+    this.state = {
+
+    }
   }
 
   render(){
     return (
-      <LocationBlock>
-        <Text>Hello World</Text>
-      </LocationBlock>
+      <View>
+        <LocationBlock>
+          <Text>Hello</Text>
+        </LocationBlock>
+      </View>
     )
   }
 };
-
-export { PickUpLocation };

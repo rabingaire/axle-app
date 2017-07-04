@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, View } from 'react-native';
-import { wrapper } from './style';
+import styles from './styles';
 
-const LocationBlock = ({ children }) => {
-  return (
-    <View style={wrapper}>
-      <Text>
-        {children}
-      </Text>
-    </View>
-  );
-};
-
-export { LocationBlock };
+export default class LocationBlock extends Component {
+  render() {
+    return (
+      <View style={styles.wrapper}>
+        {this.props.children}
+      </View>
+    )
+  }
+}

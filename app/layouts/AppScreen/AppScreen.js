@@ -10,12 +10,11 @@ import PickUpLocation from './../../routes/PickUpLocation/PickUpLocation';
 
 
   const routeConfiguration = {
+    PickUpLocation: { screen: PickUpLocation },
     PathSelection: { screen: PathSelection },
     Login: { screen: Login },
     SignUp: { screen: SignUp },
     ChangePassword: { screen: ChangePassword },
-    PickUpLocation: { screen: PickUpLocation },
-
   }
 
 // going to disable the header for now
